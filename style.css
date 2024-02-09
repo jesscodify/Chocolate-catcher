@@ -1,0 +1,83 @@
+body {
+    font-family: 'Agrandir';
+    /* background-color: #f9e3e3; */
+    height: 100%;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #764841;
+    font-size: 3.5em;
+    font-weight: bolder;
+    
+}
+
+.small{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#game-container {
+    position: relative;
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #d81e5b;
+    overflow: hidden; /* Prevent chocolates from overflowing */
+    background-color: bisque;
+    opacity: 1;
+}
+
+#basket {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-image: url('wicker-basket.png'); /* Adjust path to your basket image */
+    background-size: cover;
+    z-index: 1; /* Ensure the basket is above the chocolates */
+}
+
+#score {
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+/* Chocolate */
+.chocolate {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('chocolate-bar.png'); /* Adjust path to your chocolate image */
+    background-size: cover;
+}
+
+/* Heart image */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('heart.png'); /* Adjust path to your heart image */
+    background-size: cover;
+}
+
